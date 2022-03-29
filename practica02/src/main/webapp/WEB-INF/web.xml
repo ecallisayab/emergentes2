@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>VerificarServlet</servlet-name>
+        <servlet-class>com.emergentes.practica02.VerificarServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GuardarTareaServlet</servlet-name>
+        <servlet-class>com.emergentes.practica02.GuardarTareaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BorrarTareaServlet</servlet-name>
+        <servlet-class>com.emergentes.practica02.BorrarTareaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VerificarServlet</servlet-name>
+        <url-pattern>/VerificarServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuardarTareaServlet</servlet-name>
+        <url-pattern>/GuardarTareaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BorrarTareaServlet</servlet-name>
+        <url-pattern>/BorrarTareaServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
